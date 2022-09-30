@@ -1,12 +1,10 @@
 %% Define implicit function
-func_implicit = @(x) x.^2-x-2;
-
+implicit_func = @(x) x.^2 - x - 2;
 %%
 % define x vector
-x = [-2:0.01:3];
+x = -2:0.01:3;
 % calcualte y values
-y = func_implicit(x);
-
+y = implicit_func(x);
 %%
 % I'm plotting functions
 plot(x,y); hold on
